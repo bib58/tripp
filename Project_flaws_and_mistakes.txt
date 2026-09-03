@@ -1,0 +1,23 @@
+0. Single-File Anti-Pattern makes testing, version control, modular maintenance, and multi-developer collaboration practically impossibl
+1. No password verification, password hashing, credential/user verification, account lockout, etc.
+2. The application stores users and their roles in the browser and determines permissions. The role is read from the client-side db object.
+3. The application has no real database or API layer.
+4. No defined schema and transaction workflow
+5. Bar code and GPS implementation missing
+6. No routing between pages
+7. Stores photo data directly in the browser. The ideal architecture explicitly calls for: S3-compatible object storage for payment proofs, documents and receipts. 
+8. Invoice numbers, gate-pass numbers and transaction references are generated randomly. There is no database-level uniqueness constraint. Two operations can theoretically produce the same business identifier.
+9. No branch-level data isolation, if we want to later create multiple branches
+10. style rendering for three different user roles
+11. Error handling (try catch ka scene nhi hai) making hard to debug and maintain
+12. Websocket will be helpful for gps 
+13. Missing GST E-Way Bill & E-Invoice Generation:
+  Commercial transit of rice valued above ₹50,000 mandates government E-Way Bill numbers 
+  and IRN QR codes. The system generates dummy numbers with no GST validation.
+14. Cross-Site Scripting (XSS) Vulnerabilities:
+  Dynamic attributes and inline event handlers (e.g., `onclick="focusVehicleOnMap('...')"`) 
+  directly interpolate database string values. Malicious characters in party names, 
+  vehicle numbers, or notes can escape attributes and execute arbitrary JavaScript.
+15. Single chane actually results in multiple chanegs
+  - Inbound Paddy Intake in Procurement does NOT increment Raw Paddy stock in Inventory.
+  - Logging a Milling Batch does NOT deduct Raw Paddy or add Finished Rice/Bran/Husk to warehouse stock.

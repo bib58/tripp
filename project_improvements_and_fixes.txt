@@ -1,0 +1,71 @@
+1. WEIGHBRIDGE FLOW
+
+When the truck arrives, the operator enters or scans the vehicle number.
+Then the operator selects the farmer or supplier and the paddy variety.
+The system records the gross weight of the loaded truck.
+After that, the truck status becomes Inside or Unloading.
+The system also prints the initial gate entry token.
+
+Second is Truck Out.
+
+When the truck is leaving, the operator selects the truck from the active list.
+The system records the tare weight, which is the weight of the empty truck.
+Then the system automatically calculates the net weight.
+
+Net Weight equals Gross Weight minus Tare Weight.
+
+If the moisture level is more than 14 percent, the system automatically applies the moisture deduction.
+Finally, the system generates the final weighment slip and completes the gate pass with one click.
+
+
+2. AUTOMATIC INVENTORY
+
+When paddy comes into the mill, the raw paddy stock automatically increases.
+
+When we process paddy in a milling batch, the system automatically deducts the raw paddy from stock.
+At the same time, it adds the produced items to stock, such as head rice, broken rice, rice bran, and husk.
+
+When we create a sales invoice, the system automatically reduces the sold rice bags from the warehouse.
+The financial entries should also happen automatically.
+
+For example, when we create a sales invoice, the system records the sales and the dealer's outstanding amount.
+When a payment is received, the system updates the cash or bank balance and reduces the pending amount.
+
+
+3. WHATSAPP AND PRINTING
+
+We should add a simple Share on WhatsApp button to weighment slips and sales bills.
+When the operator clicks it, WhatsApp Web or mobile should open with a ready-made message.
+
+The message should contain important details such as the mill name, slip number, vehicle number, farmer name, net paddy, rate, and total amount.
+
+For wholesale customers, we should also have a standard GST A4 invoice format.
+
+
+4. DAY-END CLOSING
+
+We should have one simple day-end closing screen.
+For example, at 7 PM, the mill owner can open this screen and see the complete summary of the day.
+
+It should show:
+Total paddy received today.
+Total number of trucks.
+Total paddy quantity.
+Total rice dispatched.
+Total rice bags and metric tonnes.
+Total cash and bank collections.
+Total operational expenses.
+
+Finally, it should show the net cash available in the mill.
+The owner should be able to see all of this without opening multiple screens.
+
+
+5. Part Account Book
+We need a simple running ledger for farmers and dealers. The user should be able to search for any farmer or dealer by name.
+
+The system should then show:
+How much goods were delivered or purchased.
+How much payment was made or received.
+How much amount is still outstanding.
+
+There should also be an option to export that to Excel or CSV. This will make it easier for the accountant and for GST-related work.
